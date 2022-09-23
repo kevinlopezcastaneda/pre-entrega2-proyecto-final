@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and(max-width:768){
+    body{width: 50%;
+        grid-template-columns: 1.5fr;
+        grid-row:repeat(3 1fr);
+        grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+
+    }
+
+}
+@media screen and(max-width:567){
+    body{width: 50%;
+        grid-template-columns: 1.5fr;
+        grid-row: repeat(6 1fr) ;
+        grid-template-areas:
+        "header"
+        "header"
+        "main"
+        "aside"
+        "footer"
+        "footer";
+    }
+
+}   
+
+       
+
+body{
+    background-color: rgb(240, 214, 234);
+    font-family: "Montserrat-italic";
+}
+.padre {  display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 0.2fr 2fr 0.2fr;
+    grid-template-areas:
+      "header header"
+      "main aside"
+      "footer footer";
+  }
+  
+  .header { 
+    grid-area: header; }
+
+  .logo{
+    width: 130px;
+    border-radius: 50%;
+    }
+    .logo:hover{
+        transform: rotate(70deg);
+    }
+  
+  .main {
+    
+    grid-area: main; }
+    h1, h2, h3, h4{
+        font-family: "playfair display-regular", sans-serif;
+        color:red;
+        text-align: center;
+        padding: 20px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    nav{
+        text-align: center;
+    }
+    .menu{
+        list-style-type: none;
+        background: linear-gradient(to top,mediumorchid, rgb(255, 255, 255));
+        padding: 0;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .menu .item{
+        display: inline-block;
+        position: relative;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .menu .submenu{
+        position: absolute;
+        display: none;
+    }
+    .menu .submenu .sub_i{
+        display: block;
+        font-size: 0.9rem;
+        padding: auto;
+        list-style-type: none;
+    }
+    .menu .item a{
+        color: red;
+        text-decoration: none;
+        font-weight: bolder;
+        display: inline-block;
+        padding: 20px;
+    }
+    .menu .item a:hover{
+        color: rgb(228, 72, 72);
+        transform: translate(10px, 20px);
+        border-radius: 10px;
+    }
+    .menu .item:hover .submenu{
+        display: block;
+        color: rgb(122, 48, 48);
+        border-radius: 10px;
+        transform: translate(10px, 20px);
+    }
+    .menu .item:hover a{
+        background-color: rgb(49, 20, 56);
+        color: red;
+        width: -moz-available;
+        border-radius: 10px;
+    }
+    .sectioon1{
+        background-image: url("../assets/img/vestido2.jpg");
+        height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px;
+        margin: 50px;
+    }
+    .sectioon2{
+        background-image: url("../assets/img/vestido3.jpg");
+        height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px;
+        margin: 50px;
+    }
+    .sectioon3{
+        background-color:rgb(240, 214, 234);
+        height: 500px;
+        padding: 30px;
+        margin: 50px;
+    }
+    .sectioon1 p, .sectioon2 p{
+        background-color: #f5c6f36c;
+        padding: 10px;
+    }
+    h5{
+        color: red;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    
+    .vestido{
+        text-align: center;
+    }
+    .vestido img{
+        width: 200PX;
+        border-radius: 30px;
+    }
+    
+
+  .main p{
+    text-align: center;
+    line-height: 1.8;
+    padding: 30px;
+}
+  
+  .aside { 
+    grid-area: aside; 
+    line-height: 1.8;
+    padding: 20px;
+    border: solid 2px  mediumorchid;
+    margin-top: 50px;
+}
+  .aside img{
+    width: 300px;
+  }
+  
+  .footer {
+    background: linear-gradient(mediumorchid, rgb(255, 255, 255));
+    padding: 0;
+    width: 90%;
+    margin: 20px auto;
+     grid-area: footer; }
+     #top{
+        text-align: center;}
+  
+
+
+@font-face{
+    font-family: "Montserrat-italic";
+    src: url(../galeria/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: "playfair display-regular";
+    src: url(../galeria/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+ 
+
+    
